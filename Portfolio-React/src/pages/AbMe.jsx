@@ -1,10 +1,11 @@
 import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
-import CoderImg from './coder.jpg'
+import CoderImg from '../components/coder.jpg'
 import {FaGithub} from'react-icons/fa'
 
 
-const Main = () => {
+
+export default function AbMe () {
   return (
     <div id='main'>
       <img className='w-full h-screen object-cover' src={CoderImg} alt="aesthetic coder" />
@@ -38,4 +39,4 @@ const Main = () => {
   )
 }
 
-export default Main
+

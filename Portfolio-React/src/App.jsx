@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
+import Tabs from './components/Tabs'
 import Navbar from './components/Navbar'
-import Main from './components/Main'
+import AbMe from './pages/AbMe'
 
 function App() {
   
 
   return (
     <div>
+      <Tabs />
       <Navbar />
-      <Main />
+      <AbMe />
+      <Outlet />
     </div>
   )
 }
