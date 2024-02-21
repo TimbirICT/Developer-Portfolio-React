@@ -1,30 +1,34 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../components/Navbar';
 
 const Contact = () => {
   return (
-    <div id='contact' className='max-w-[1040px] m-auto md:pl-20 p-4'>
-      <h1 className='py-4 text-4xl font-bold text-center text-blue'>Contact</h1>
-      <form action="" method='POST' encType='multipart/form-data'></form>
-      <div>
-        <div>
-          <label>Name</label>
-          <input type='text' name='name' id='name' placeholder='Enter your name' />
-        </div>
-        <div>
-          <label>Email</label>
-          <input type='text' name='email' id='email' placeholder='Enter your email' />
-        </div>
-        <div>
-          <label>Phone Number</label>
-          <input type='text' name='phone' id='phone' placeholder='Enter your phone number' />
-        </div>
-        <div>
-          <label>Message</label>
-          <textarea name='message' id='message' placeholder='Enter your message'></textarea>
+    <div>
+      <Navbar />
+      <div id='contact' className='max-w-[1040px] m-auto md:pl-20 p-4'>
+        <h1 className='py-4 text-4xl font-bold text-center text-blue'>Contact</h1>
+        <form action='' method='POST' encType='multipart/form-data'></form>
+        <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+          <div className='flex flex-col'>
+            <label className='uppercase text-sm py-2'>Name</label>
+            <input className='border-2 rounded-lg p-3 flex border-gray-300' type='text' name='name' id='name' placeholder='Enter your name' />
+          </div>
+          <div className='flex flex-col'>
+            <label className='uppercase text-sm py-2'>Email</label>
+            <input className='border-2 rounded-lg p-3 flex border-gray-300' type='email' name='email' id='email' placeholder='Enter your email' />
+          </div>
+          <div>
+            <label className='uppercase text-sm py-2'>Phone Number</label>
+            <input className='border-2 rounded-lg p-3 flex border-gray-300' type='text' name='phone' id='phone' placeholder='Enter your phone number' />
+          </div>
+          <div>
+            <label className='uppercase text-sm py-2'>Message</label>
+            <textarea rows='10' name='message' id='message' placeholder='Enter your message'></textarea>
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -15,7 +15,7 @@ const Navbar = () => {
     <div>
       <AiOutlineMenu onClick={handleNav} className='absolute top-4 right-4 z-[99]' />
       {nav ? (
-        <div className='fixed w-full h-screen bg-white flex flex-col items-center justify-start z-20'>
+        <div className='fixed w-full h-screen bg-white/70 flex flex-col items-center justify-start z-20'>
           <a href="/" className='w-[50%] flex justify-center items-center rounded-full shadow-lg rounded-full m-2 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
             <AiOutlineHome size={20} />
             <span className='pl-4'>About Me</span>

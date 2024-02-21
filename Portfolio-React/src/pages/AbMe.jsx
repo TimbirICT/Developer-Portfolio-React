@@ -33,7 +33,10 @@ const AbMe = () => {
               />
             </h2>
             <div className='flex justify-between pt-5 justify-center'>
-              <FaGithub className='cursor-pointer' size={30} />
+            <a href='https://github.com/TimbirICT' target='_blank' rel='noopener noreferrer' className='cursor-pointer'>
+            <FaGithub size={30} />
+            </a>
+
             </div>
           </div>
         </div>
