@@ -10,10 +10,11 @@ const ProjectItem = ({img, title}) => {
         </h3>
         <p>Class Project</p>
         <a href='/'/>
-            <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'>
+            <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'></p>
       </div>
     </div>
   )
 }
+
 
 export default ProjectItem
