@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Tabs from './components/Tabs'
-import Navbar from './components/Navbar'
 import AbMe from './pages/AbMe'
 import Portfolio from './pages/Portfolio'
+import Contact from './pages/Contact'
 
 
 function App() {
@@ -12,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AbMe />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       </BrowserRouter>
     </div>
